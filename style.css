@@ -1,0 +1,82 @@
+/* Global Styles */
+* {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+    padding-left: 40px;
+    list-style-type: circle;
+    color: rgba(96, 255, 79, 0.949);
+}
+
+div {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+/* Media Queries */
+
+/* For screens smaller than laptop size (1024px) */
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    ul {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    div {
+        width: 90%;
+    }
+
+    img {
+        width: 100%; /* Responsive image size */
+        max-width: 400px; /* Max width for smaller screens */
+    }
+}
+
+/* For larger screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    h2 {
+        font-size: 32px;
+    }
+
+    ul {
+        font-size: 20px;
+    }
+
+    div {
+        width: 80%;
+    }
+
+    img {
+        width: 100%; /* Responsive image size */
+        max-width: 600px; /* Max width for larger screens */
+    }
+}
